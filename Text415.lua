@@ -32,14 +32,14 @@ local topTitles = {
 
 -- poner títulos abajo de tal botón
 local customTitles = {
-    ["SPEED"] = "MOVEMENT SETTINGS",
+    ["SPED"] = "MOVEMENT SETTINGS",
     ["AUTO KILL ENEMIES"] = "KILL SYSTEM",
-    ["ESP NAME"] = "ESP VISUAL",
+    ["ESP NAE"] = "ESP VISUAL",
 }
 
 -- cambiar el nombre de los Titulos de las secciones 
 local menuNames = {
-    ["MAIN"] = "PLAYER MENU",
+    ["MAI"] = "PLAYER MENU",
     ["COMBAT"] = "FIGHT SYSTEM",
     ["ESP"] = "VISUALS",
     ["TELEPORT"] = "TELEPORTS",
@@ -133,7 +133,7 @@ local buttonTitles = {
     ["PLAYER NAME"] = "PLAYERS",
     
 
-    ["ELIGIR PACK"] = "ANIMATION PACK",
+    ["AIMBOT LIGERO"] = "AIM",
     ["GAZE EMOTE"] = "EMOTES",
     
     ["ESP TO ALL ALARMS"] = "END",
@@ -235,8 +235,8 @@ local textboxButtons = {
     variable = "FIND_TOOL",
     url = nil
     },
-    ["NAME OF THE ITEM."] = {
-    variable = "GRAB_ITEM",
+    ["SIZE FOV"] = {
+    variable = "AIMBOT_FOV",
     url = nil
     },
     ["MULTIPLY DAMAGE"] = {
@@ -672,21 +672,10 @@ local menuData = {
     "FLY",
 },
     ["COMBAT"] = {
-        "AUTO KILL ENEMIES",
-        "KILL AURA",
-        "RANGE",        
-        "HITBOX EXTENDER",
-        "SIZE",
-        "TRASPARENCY 0-1",
-        "MULTIPLY DAMAGE",
-        "APPLY DAMAGE",
-        "INFINITY AMMO",
-        "BULLET SPEED",
-        "BULLETSPERSHOT",
-        "FULL AUTO",
-        "INSTANT RELOAD",
-        "NO FIRE DELAY", 
-        "INSTANT SWING",
+        "AIMBOT LIGERO",
+        "AIMBOT INSTANT",
+        "FOV SIZE",
+        "AIMBOT OP",
     },
     ["BRING/GRAB"] = {
         "NAME OF THE ITEM",
@@ -851,16 +840,16 @@ if topTitle then
         elseif opt == "ESP ENEMIES" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text388/refs/heads/main/Text388.lua"))()
 
-        elseif opt == "ESP NAME TO ENEMIES" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text389/refs/heads/main/Text389.lua"))()
+        elseif opt == "AIMBOT LIGERO" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text422/refs/heads/main/Text422.lua"))()
                             
-        elseif opt == "ESP HP TO ENEMIES" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text390/refs/heads/main/Text390.lua"))()
+        elseif opt == "AIMBOT INSTANT" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text423/refs/heads/main/Text423.lua"))()
                             
-        elseif opt == "ESP ENEMIES (NO LAG)" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text391/refs/heads/main/Text391.lua"))()
+        elseif opt == "AIMBOT OP" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text421/refs/heads/main/Text421.lua"))()
 
-        elseif opt == "ESP TO ALL ALARMS" then
+        elseif opt == "" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text392/refs/heads/main/Text392.lua"))()
                             
         elseif opt == "BRING ITEM" then
