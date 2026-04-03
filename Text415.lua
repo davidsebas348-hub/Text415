@@ -64,7 +64,7 @@ local multiButtons = {
             {name = "BLUE", color = Color3.fromRGB(0, 0, 255)},
             {name = "WHITE", color = Color3.fromRGB(255, 255, 255)},
             {name = "BLACK", color = Color3.fromRGB(0, 0, 0)},
-            {name = "RAINBOW", color = Color3.fromRGB(255, 255, 255,)},
+            {name = "RAINBOW", color = Color3.fromRGB(255, 255, 255)},
         }
     },
 
