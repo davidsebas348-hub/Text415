@@ -798,8 +798,8 @@ if topTitle then
         elseif opt == "AUTO KILL ENEMIES" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text383/refs/heads/main/Text383.lua"))()
                             
-        elseif opt == "INFINITY ZOOM" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text384/refs/heads/main/Text384.lua"))()
+        elseif opt == "DESYNC" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text428/refs/heads/main/Text428.lua"))()
 
         elseif opt == "UNLOCK THIRD PERSON" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text385/refs/heads/main/Text385.lua"))()
