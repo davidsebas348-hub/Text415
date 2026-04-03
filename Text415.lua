@@ -698,7 +698,6 @@ local menuData = {
     },
     ["ESP"] = {
         "ESP PLAYERS",
-        "COLOR OF THE ESP",
         "ESP PLAYERS (NO LAG)",
         "ESP NAME",
         "ESP DISTANCIA",
