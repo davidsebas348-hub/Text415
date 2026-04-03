@@ -51,7 +51,7 @@ local menuNames = {
 
 local multiButtons = {
     ["COLOR OF THE ESP"] = { 
-        variable = "CAMBIAR_COLOR",
+        variable = "CAMBIAR_COLOR()",
         options = {
             {name = "GREEN", color = Color3.fromRGB(0, 255, 0)},
             {name = "RED", color = Color3.fromRGB(255, 0, 0)},
@@ -810,12 +810,13 @@ if topTitle then
 
         elseif opt == "ESP PLAYERS" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text416/refs/heads/main/Text416.lua"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text418/refs/heads/main/Text418.lua"))()
                             
         elseif opt == "ESP PLAYERS (NO LAG)" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text417/refs/heads/main/Text417.lua"))()
 
-        elseif opt == "COLOR OF THE ESP" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text418/refs/heads/main/Text418.lua"))()
+        elseif opt == "" then
+            loadstring(game:HttpGet(""))()
                             
         elseif opt == "ESP FOR ALL FOODS" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text377/refs/heads/main/Text377.lua"))()
