@@ -1,5 +1,5 @@
 -- ======================
--- SBS HUB COMPLETO FINAL  fov size 
+-- SBS HUB COMPLETO FINAL  (Pistol Arena)
 -- ======================
 repeat task.wait() until game:IsLoaded()
 
@@ -27,7 +27,7 @@ local numericBoxes = {
 -- poner título arriba de tal botón 
 local topTitles = {
     ["SPEED"] = "MOVEMENT SETTINGS",
-    ["AUTO KILL ENEMIES"] = "KILL SYSTEM",
+    ["INFINITY ZOOM"] = "CAMERA",
 }
 
 -- poner títulos abajo de tal botón
@@ -126,7 +126,7 @@ local BUTTON_CUSTOM = {
 local buttonTitles = {
     ["SPEED"] = "PLAYER",
     ["AUTO DESTROY TO ALL OBJECTS"] = "TROLL",
-    ["INFINITY ZOOM"] = "CAMERA",
+    ["FULL BRIGHT"] = "EFFECT",
 
     ["TP TOOL"] = "CLICK TP",
     ["ABOVE THE MARKET"] = "MAP",
@@ -340,7 +340,7 @@ end
 local title = Instance.new("TextLabel", mainFrame)
 title.Size = UDim2.new(1,0,0,50)
 title.BackgroundColor3 = Color3.fromRGB(0,0,0)
-title.Text = "SBS HUB | Survive Overnight in a Mega Store"
+title.Text = "SBS HUB | Pistol Arena"
 title.TextColor3 = Color3.fromRGB(255,255,255)
 title.Font = Enum.Font.GothamBold
 title.TextScaled = true
@@ -655,13 +655,11 @@ local menuData = {
     "LOCALPLAYER",
     "DESYNC",
     "INVISIBLE",
-    "INFINITY STAMINA",
     "INFINITY ZOOM",
     "CAMERA NOCLIP",
     "UNLOCK THIRD PERSON",
     "FULL BRIGHT",
-    "AUTO DESTROY TO ALL OBJECTS",
-    "NO VISIBLE ITEMS (GRAB)",
+    "X-RAY",
     "SPEED",
     "JUMPPOWER",
     "GRAVITY",
@@ -696,12 +694,6 @@ local menuData = {
         "ESP DISTANCE",
         "ESP TRACERS",
         
-    },
-    ["ANIMATIONS"] = {
-        "ELIGIR PACK",
-        "ELIGIR PACK V2",
-        "ELIGIR PACK (CODIGO)",
-        "GAZE EMOTE",
     },
     ["TELEPORT"] = {
         "hola"
@@ -847,62 +839,6 @@ if topTitle then
 
         elseif opt == "" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text392/refs/heads/main/Text392.lua"))()
-                            
-        elseif opt == "BRING ITEM" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text393/refs/heads/main/Text393.lua"))()
-                            
-        elseif opt == "GRAB THE ITEM" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text394/refs/heads/main/Text394.lua"))()
-
-        elseif opt == "APPLY DAMAGE" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text395/refs/heads/main/Text395.lua"))()
-                            
-        elseif opt == "INFINITY AMMO" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text396/refs/heads/main/Text396.lua"))()
-
-        elseif opt == "FULL AUTO" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text399/refs/heads/main/Text399.lua"))()
-                            
-        elseif opt == "INSTANT RELOAD" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text400/refs/heads/main/Text400.lua"))()
-
-        elseif opt == "NO FIRE DELAY" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text401/refs/heads/main/Text401.lua"))()
-                            
-        elseif opt == "NO VISIBLE ITEMS (GRAB)" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text402/refs/heads/main/Text402.lua"))()
-                            
-        elseif opt == "AUTO DESTROY TO ALL OBJECTS" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text403/refs/heads/main/Text403.lua"))()
-
-        elseif opt == "BRING ALL THE ITEMS" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text404/refs/heads/main/Text404.lua"))()
-                            
-        elseif opt == "GRAB THE ITEM (BUTTON)" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text405/refs/heads/main/Text405.lua"))()
-                            
-        elseif opt == "INSTANT SWING" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text406/refs/heads/main/Text406.lua"))()
-
-        elseif opt == "ELECTRICAL ROOM" then
-            getgenv().TP_PLACE = "electricidad"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text407/refs/heads/main/Text407.lua"))()
-                            
-        elseif opt == "OUTSIDE THE MARKET" then
-            getgenv().TP_PLACE = "afuera"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text407/refs/heads/main/Text407.lua"))()
-                            
-        elseif opt == "ABOVE THE MARKET" then 
-            getgenv().TP_PLACE = "arriba"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text407/refs/heads/main/Text407.lua"))()
-                            
-        elseif opt == "WITHIN THE MARKET" then
-            getgenv().TP_PLACE = "dentro"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text407/refs/heads/main/Text407.lua"))()
-
-        elseif opt == "MANAGER'S OFFICE" then
-            getgenv().TP_PLACE = "dentro de la sala de el gerente"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text407/refs/heads/main/Text407.lua"))()
                             
         elseif opt == "TP TO PLAYER" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text408/refs/heads/main/Text408.lua"))()
