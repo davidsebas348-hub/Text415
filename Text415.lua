@@ -1,5 +1,5 @@
 -- ======================
--- SBS HUB COMPLETO FINAL (Survive Overnight in a Mega Store)
+-- SBS HUB COMPLETO FINAL (Su)
 -- ======================
 repeat task.wait() until game:IsLoaded()
 
@@ -50,12 +50,21 @@ local menuNames = {
 -- ======================
 
 local multiButtons = {
-    ["COLOR SELECT OF THE ESP"] = {
-        variable = "Target",
+    ["COLOR OF THE ESP"] = { 
+        variable = "CAMBIAR_COLOR",
         options = {
-            {name = "PLAYER", color = Color3.fromRGB(40,40,40)},
-            {name = "NPC", color = Color3.fromRGB(120,40,40)},
-            {name = "ALL", color = Color3.fromRGB(40,120,40)},
+            {name = "GREEN", color = Color3.fromRGB(0, 255, 0)},
+            {name = "RED", color = Color3.fromRGB(255, 0, 0)},
+            {name = "CYAN", color = Color3.fromRGB(0, 255, 255)},
+            {name = "YELLOW", color = Color3.fromRGB(255, 255, 0)},
+            {name = "MAGENTA", color = Color3.fromRGB(255, 0, 255)},
+            {name = "ORANGE", color = Color3.fromRGB(255, 165, 0)},
+            {name = "PURPLE", color = Color3.fromRGB(128, 0, 255)},
+            {name = "PINK", color = Color3.fromRGB(255, 192, 203)},
+            {name = "BLUE", color = Color3.fromRGB(0, 0, 255)},
+            {name = "WHITE", color = Color3.fromRGB(255, 255, 255)},
+            {name = "BLACK", color = Color3.fromRGB(0, 0, 0)},
+            {name = "RAINBOW", color = Color3.fromRGB(255, 255, 255,)},
         }
     },
 
@@ -90,6 +99,12 @@ local BUTTON_CUSTOM = {
     },
 
     ["AUTOMATICALLY EQUIP THE TOOL"] = {
+        size = UDim2.new(1, -50, 0, 27),
+        x = 20,
+        y = -6
+    },
+
+    ["COLOR OF THE ESP"] = {
         size = UDim2.new(1, -50, 0, 27),
         x = 20,
         y = -6
@@ -684,6 +699,7 @@ local menuData = {
     },
     ["ESP"] = {
         "ESP PLAYERS",
+        "COLOR OF THE ESP",
         "ESP PLAYERS (NO LAG)",
         "ESP NAME",
         "ESP DISTANCIA",
@@ -798,8 +814,8 @@ if topTitle then
         elseif opt == "ESP PLAYERS (NO LAG)" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text417/refs/heads/main/Text417.lua"))()
 
-        elseif opt == "ESP DISTANCE" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text376/refs/heads/main/Text376.lua"))()
+        elseif opt == "COLOR OF THE ESP" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text418/refs/heads/main/Text418.lua"))()
                             
         elseif opt == "ESP FOR ALL FOODS" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text377/refs/heads/main/Text377.lua"))()
