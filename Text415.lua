@@ -1,5 +1,5 @@
 -- ======================
--- SBS HUB COMPLETO FINAL (Su)
+-- SBS HUB COMPLETO FINAL  fov size 
 -- ======================
 repeat task.wait() until game:IsLoaded()
 
@@ -21,7 +21,7 @@ local numericBoxes = {
     ["SIZE"] = true,
     ["FLY SPEED"] = true,
     ["TRASPARENCY 0-1"] = true,
-    ["MULTIPLY DAMAGE"] = true,
+    ["FOV SIZE"] = true,
 }
 
 -- poner título arriba de tal botón 
@@ -235,7 +235,7 @@ local textboxButtons = {
     variable = "FIND_TOOL",
     url = nil
     },
-    ["SIZE FOV"] = {
+    ["FOV SIZE"] = {
     variable = "AIMBOT_FOV",
     url = nil
     },
