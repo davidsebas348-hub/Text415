@@ -116,7 +116,7 @@ local BUTTON_CUSTOM = {
 local buttonTitles = {
     ["SPEED"] = "PLAYER",
     ["AUTO DESTROY TO ALL OBJECTS"] = "TROLL",
-    ["FULL BRIGHT"] = "EFFECT",
+    ["JUMP(BUTTON)"] = "JUMP PAD",
 
     ["TP TOOL"] = "CLICK TP",
     ["ABOVE THE MARKET"] = "MAP",
@@ -644,6 +644,7 @@ local menuData = {
     ["MAIN"] = {
     "DESYNC",
     "INVISIBLE",
+    "JUMP(BUTTON)",
     "SPEED",
     "JUMPPOWER",
     "GRAVITY",
@@ -681,7 +682,9 @@ local menuData = {
         
     },
     ["TELEPORT"] = {
-        "hola"
+        "TP TOOL",
+        "PLAYER NAME",
+        "TP TO PLAYER",
     },
     ["AUTO FARM"] = {
         "AUTO FARM KILLS (beta)",
@@ -801,8 +804,8 @@ if topTitle then
         elseif opt == "DESYNC" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text428/refs/heads/main/Text428.lua"))()
 
-        elseif opt == "UNLOCK THIRD PERSON" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text385/refs/heads/main/Text385.lua"))()
+        elseif opt == "JUMP(BUTTON)" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text429/refs/heads/main/Text429.lua"))()
                             
         elseif opt == "ESP TO ALL GUNS" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text386/refs/heads/main/Text386.lua"))()
