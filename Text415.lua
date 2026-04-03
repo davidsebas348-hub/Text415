@@ -706,16 +706,8 @@ local menuData = {
     ["TELEPORT"] = {
         "hola"
     },
-    ["AUTO/ANTI"] = {
-        "AUTO EAT",
-        "AUTOMATICALLY EQUIP THE TOOL",  
-        "SELF-HEALING", 
-        "AUTOMATICALLY EQUIP THE TOOL ",
-        "WITHIN THE MARKET", 
-        "ELECTRICAL ROOM",
-        "MANAGER'S OFFICE",
-        "PLAYER NAME",
-        "TP TO PLAYER",
+    ["AUTO FARM"] = {
+        "AUTO FARM KILLS (beta)",
     },
     ["Fps"] = {
         "Fps Boost"
@@ -820,10 +812,10 @@ if topTitle then
         elseif opt == "HITBOX EXTENDER" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text425/refs/heads/main/Text425.lua"))()
                             
-        elseif opt == "ESP A ALL AMMOS" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text381/refs/heads/main/Text381.lua"))()
+        elseif opt == "AUTO FARM KILLS (beta)" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text426/refs/heads/main/Text426.lua"))()
 
-        elseif opt == "HITBOX EXTENDER" then
+        elseif opt == "" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text382/refs/heads/main/Text382.lua"))()
                             
         elseif opt == "AUTO KILL ENEMIES" then
