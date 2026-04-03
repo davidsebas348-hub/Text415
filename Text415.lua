@@ -678,7 +678,7 @@ local menuData = {
         "AIMBOT OP",
         "AUTO SHOOT PLAYERS",
         "HITBOX EXTENDER",
-        "HSIZE",
+        "SIZE",
         "TRASPARENCY 0-1",
     },
     ["BRING/GRAB"] = {
