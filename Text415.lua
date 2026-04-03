@@ -51,7 +51,7 @@ local menuNames = {
 
 local multiButtons = {
     ["COLOR OF THE ESP"] = { 
-        variable = "CAMBIAR_COLOR()",
+        variable = "COLOR_NOMBRE",
         options = {
             {name = "GREEN", color = Color3.fromRGB(0, 255, 0)},
             {name = "RED", color = Color3.fromRGB(255, 0, 0)},
@@ -64,7 +64,6 @@ local multiButtons = {
             {name = "BLUE", color = Color3.fromRGB(0, 0, 255)},
             {name = "WHITE", color = Color3.fromRGB(255, 255, 255)},
             {name = "BLACK", color = Color3.fromRGB(0, 0, 0)},
-            {name = "RAINBOW", color = Color3.fromRGB(255, 255, 255)},
         }
     },
 
