@@ -134,7 +134,7 @@ local buttonTitles = {
     
 
     ["AIMBOT LIGERO"] = "AIM",
-    ["GAZE EMOTE"] = "EMOTES",
+    ["AUTO SHOOT PLAYERS"] = "TROLL",
     
     ["ESP TO ALL ALARMS"] = "END",
     ["ESP TO ALL THE TOKEN"] = "ITEMS",
@@ -676,6 +676,7 @@ local menuData = {
         "AIMBOT INSTANT",
         "FOV SIZE",
         "AIMBOT OP",
+        "AUTO SHOOT PLAYERS",
     },
     ["BRING/GRAB"] = {
         "NAME OF THE ITEM",
@@ -810,8 +811,8 @@ if topTitle then
         elseif opt == "ESP TRACERS" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text420/refs/heads/main/Text420.lua"))()
 
-        elseif opt == "ESP HP" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text379/refs/heads/main/Text379.lua"))()
+        elseif opt == "AUTO SHOOT PLAYERS" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text424/refs/heads/main/Text424.lua"))()
                             
         elseif opt == "ESP TO ALL THE TOKEN" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text380/refs/heads/main/Text380.lua"))()
