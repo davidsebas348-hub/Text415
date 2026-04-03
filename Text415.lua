@@ -50,19 +50,9 @@ local menuNames = {
 -- ======================
 
 local multiButtons = {
-    ["COLOR OF THE ESP"] = { 
-        variable = "COLOR_NOMBRE",
+    [""] = { 
+        variable = "",
         options = {
-            {name = "GREEN", color = Color3.fromRGB(0, 255, 0)},
-            {name = "RED", color = Color3.fromRGB(255, 0, 0)},
-            {name = "CYAN", color = Color3.fromRGB(0, 255, 255)},
-            {name = "YELLOW", color = Color3.fromRGB(255, 255, 0)},
-            {name = "MAGENTA", color = Color3.fromRGB(255, 0, 255)},
-            {name = "ORANGE", color = Color3.fromRGB(255, 165, 0)},
-            {name = "PURPLE", color = Color3.fromRGB(128, 0, 255)},
-            {name = "PINK", color = Color3.fromRGB(255, 192, 203)},
-            {name = "BLUE", color = Color3.fromRGB(0, 0, 255)},
-            {name = "WHITE", color = Color3.fromRGB(255, 255, 255)},
             {name = "BLACK", color = Color3.fromRGB(0, 0, 0)},
         }
     },
@@ -652,14 +642,8 @@ local scrollConfig = {
 local menuOrder = {"MAIN","COMBAT","ESP","TELEPORT","BRING/GRAB","AUTO/ANTI","DODGE","AUTO FARM","FLING","Fps","YOUTUBE"}
 local menuData = {
     ["MAIN"] = {
-    "LOCALPLAYER",
     "DESYNC",
     "INVISIBLE",
-    "INFINITY ZOOM",
-    "CAMERA NOCLIP",
-    "UNLOCK THIRD PERSON",
-    "FULL BRIGHT",
-    "X-RAY",
     "SPEED",
     "JUMPPOWER",
     "GRAVITY",
@@ -693,6 +677,7 @@ local menuData = {
         "ESP NAME",
         "ESP DISTANCE",
         "ESP TRACERS",
+        "X-RAY",
         
     },
     ["TELEPORT"] = {
@@ -807,8 +792,8 @@ if topTitle then
         elseif opt == "AUTO FARM KILLS (beta)" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text426/refs/heads/main/Text426.lua"))()
 
-        elseif opt == "" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text382/refs/heads/main/Text382.lua"))()
+        elseif opt == "INVISIBLE" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text427/refs/heads/main/Text427.lua"))()
                             
         elseif opt == "AUTO KILL ENEMIES" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text383/refs/heads/main/Text383.lua"))()
