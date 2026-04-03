@@ -677,6 +677,9 @@ local menuData = {
         "FOV SIZE",
         "AIMBOT OP",
         "AUTO SHOOT PLAYERS",
+        "HITBOX EXTENDER",
+        "HSIZE",
+        "TRASPARENCY 0-1",
     },
     ["BRING/GRAB"] = {
         "NAME OF THE ITEM",
@@ -814,8 +817,8 @@ if topTitle then
         elseif opt == "AUTO SHOOT PLAYERS" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text424/refs/heads/main/Text424.lua"))()
                             
-        elseif opt == "ESP TO ALL THE TOKEN" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text380/refs/heads/main/Text380.lua"))()
+        elseif opt == "HITBOX EXTENDER" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text425/refs/heads/main/Text425.lua"))()
                             
         elseif opt == "ESP A ALL AMMOS" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text381/refs/heads/main/Text381.lua"))()
