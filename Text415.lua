@@ -87,7 +87,7 @@ local BUTTON_CUSTOM = {
         y = -6
     },
 
-    ["AUTOMATICALLY EQUIP THE TOOL"] = {
+    ["BULLET TRACERS"] = {
         size = UDim2.new(1, -50, 0, 27),
         x = 20,
         y = -6
@@ -99,7 +99,7 @@ local BUTTON_CUSTOM = {
         y = -6
     },
     
-    ["AUTOMATICALLY EQUIP THE TOOL "] = {
+    ["BULLET SIZE."] = {
         size = UDim2.new(1, -50, 0, 27),
         x = 20,
         y = -6
@@ -162,15 +162,15 @@ local noToggleButtons = {
     ["LOBBY"] = true,
     ["MAP"] = true,
     ["BULLET SIZE"] = true,
-    ["GRAB THE ITEM"] = true,
-    ["NO FIRE DELAY"] = true,
-    ["BRING ALL THE ITEMS"] = true,
-    ["INSTANT SWING"] = true,  
-    ["ABOVE THE MARKET"] = true,
-    ["MANAGER'S OFFICE"] = true,
-    ["ELECTRICAL ROOM"] = true,
-    ["OUTSIDE THE MARKET"] = true,
-    ["WITHIN THE MARKET"] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,  
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    [""] = true,
+    ["BULLET TRACERS"] = true,
     ["TP TO PLAYER"] = true,  
 }
 
@@ -664,9 +664,10 @@ local menuData = {
         "SIZE",
         "TRASPARENCY 0-1",
         "SILENT AIM",
+        "BULLET TRACERS",
         "INSTANT RELOAD",
         "BULLET SIZE", 
-        "BULLET SIZE.",
+        "BULLET SIZE."
     },
     ["BRING/GRAB"] = {
         "NAME OF THE ITEM",
@@ -839,99 +840,9 @@ if topTitle then
         elseif opt == "TP TO PLAYER" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text408/refs/heads/main/Text408.lua"))()
 
-        elseif opt == "FULL BRIGHT" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text409/refs/heads/main/Text409.lua"))()
-                            
-        elseif opt == "CAMERA NOCLIP" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text410/refs/heads/main/Text410.lua"))()
-                            
-        elseif opt == "AUTO EAT" then 
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text411/refs/heads/main/Text411.lua"))()
-
-        elseif opt == "AUTOMATICALLY EQUIP THE TOOL" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text412/refs/heads/main/Text412.lua"))()
-                            
-        elseif opt == "SELF-HEALING" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text413/refs/heads/main/Text413.lua"))()
-                            
-        elseif opt == "AUTOMATICALLY EQUIP THE TOOL " then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text414/refs/heads/main/Text414.lua"))()
-
-        elseif opt == "" then
-            loadstring(game:HttpGet(""))()
-                            
-        elseif opt == "" then
-            loadstring(game:HttpGet(""))()
-
-        elseif opt == "" then
-            loadstring(game:HttpGet(""))()
-                            
-        elseif opt == "" then
-            loadstring(game:HttpGet(""))()
-
-        elseif opt == "" then
-            loadstring(game:HttpGet(""))()
-                            
-        elseif opt == "" then
-            loadstring(game:HttpGet(""))()
-
-        elseif opt == "" then
-            loadstring(game:HttpGet(""))()
-                            
-        elseif opt == "" then
-            loadstring(game:HttpGet(""))()
-                            
-        elseif opt == "" then
-            loadstring(game:HttpGet(""))()
-
-        elseif opt == "" then
-            loadstring(game:HttpGet(""))()
-                            
-        elseif opt == "" then
-            loadstring(game:HttpGet(""))()
-                            
-        elseif opt == "" then
-            loadstring(game:HttpGet(""))()
-
-        elseif opt == "" then
-            loadstring(game:HttpGet(""))()
-                            
-        elseif opt == "" then
-            loadstring(game:HttpGet(""))()
-
-        elseif opt == "" then
-            loadstring(game:HttpGet(""))()
-                            
-        elseif opt == "" then
-            loadstring(game:HttpGet(""))()
-
-        elseif opt == "" then
-            loadstring(game:HttpGet(""))()
-                            
-        elseif opt == "" then
-            loadstring(game:HttpGet(""))()
-                            
-        elseif opt == "" then
-            loadstring(game:HttpGet(""))()
-
-        elseif opt == "" then
-            loadstring(game:HttpGet(""))()
-                            
-        elseif opt == "" then
-            loadstring(game:HttpGet(""))()
-                            
-        elseif opt == "" then
-            loadstring(game:HttpGet(""))()
-
-        elseif opt == "" then
-            loadstring(game:HttpGet(""))()
-                            
-        elseif opt == "" then
-            loadstring(game:HttpGet(""))()
-                            
-        elseif opt == "SHIFT LOCK" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Shift-lock/refs/heads/main/Shift_Lock_.lua"))()
-
+        elseif opt == "BULLET TRACERS" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text434/refs/heads/main/Text434.lua"))()      
+        
         elseif opt == "FLY" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Fly/refs/heads/main/Fly.lua"))()
 
@@ -940,9 +851,6 @@ if topTitle then
 
         elseif opt == "DESYNC" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text24/refs/heads/main/Text23.lua",true))()
-
-        elseif opt == "FULL BRIGHT" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text279/refs/heads/main/Text279.lua"))()
 
         elseif opt == "LOCALPLAYER" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text8/refs/heads/main/Text8.lua"))()
@@ -961,19 +869,7 @@ if topTitle then
 
         elseif opt == "TP TOOL" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text331/refs/heads/main/Text331.lua"))()
-
-        elseif opt == "X-RAY" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text147/refs/heads/main/Text147.lua"))()
-
-        elseif opt == "KILL AURA" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text372/refs/heads/main/Text372.lua"))()
-
-        elseif opt == "INFINITY STAMINA" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text373/refs/heads/main/Text373.lua"))()
                             
-        elseif opt == "Gaze Emote" then
-            loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Gaze-emote-74592"))()
-
         end
 
     end)
