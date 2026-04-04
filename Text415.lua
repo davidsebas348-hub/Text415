@@ -119,7 +119,7 @@ local buttonTitles = {
     ["JUMP(BUTTON)"] = "JUMP PAD",
 
     ["TP TOOL"] = "CLICK TP",
-    ["ABOVE THE MARKET"] = "MAP",
+    ["MAP"] = "GAME",
     ["PLAYER NAME"] = "PLAYERS",
     
 
@@ -683,6 +683,8 @@ local menuData = {
     },
     ["TELEPORT"] = {
         "TP TOOL",
+        "MAP",
+        "LOBBY",
         "PLAYER NAME",
         "TP TO PLAYER",
     },
@@ -798,8 +800,9 @@ if topTitle then
         elseif opt == "INVISIBLE" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text427/refs/heads/main/Text427.lua"))()
                             
-        elseif opt == "AUTO KILL ENEMIES" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text383/refs/heads/main/Text383.lua"))()
+        elseif opt == "MAP" then
+            getgenv().TP_MODE = "JUMPPAD"
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text430/refs/heads/main/Text430.lua"))()
                             
         elseif opt == "DESYNC" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text428/refs/heads/main/Text428.lua"))()
@@ -807,8 +810,9 @@ if topTitle then
         elseif opt == "JUMP(BUTTON)" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text429/refs/heads/main/Text429.lua"))()
                             
-        elseif opt == "ESP TO ALL GUNS" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text386/refs/heads/main/Text386.lua"))()
+        elseif opt == "LOBBY" then
+            getgenv().TP_MODE = "LOBBY"
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text430/refs/heads/main/Text430.lua"))()
 
         elseif opt == "ESP TO OTHER ITEMS" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text387/refs/heads/main/Text387.lua"))()
