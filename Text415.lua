@@ -27,7 +27,7 @@ local numericBoxes = {
 -- poner título arriba de tal botón 
 local topTitles = {
     ["SPEED"] = "MOVEMENT SETTINGS",
-    ["INFINITY ZOOM"] = "CAMERA",
+    ["SILENT AIM"] = "OP",
 }
 
 -- poner títulos abajo de tal botón
@@ -154,13 +154,13 @@ local buttonStates = getgenv().SBS_BUTTON_STATES
 local noToggleButtons = {
     ["YOUTUBE:SBS HUB"] = true,
     ["SUSCRIBETE:)"] = true,
-    ["Gaze Emote"] = true,
+    ["SILENT AIM"] = true,
     ["LOCALPLAYER"] = true,
     ["RESET STATS"] = true,
     ["DESYNC"] = true,
     ["Fps Boost"] = true,
-    [""] = true,
-    ["INFINITY STAMINA"] = true,
+    ["LOBBY"] = true,
+    ["MAP"] = true,
     ["BRING ITEM"] = true,
     ["GRAB THE ITEM"] = true,
     ["NO FIRE DELAY"] = true,
@@ -814,8 +814,8 @@ if topTitle then
             getgenv().TP_MODE = "LOBBY"
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text430/refs/heads/main/Text430.lua"))()
 
-        elseif opt == "ESP TO OTHER ITEMS" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text387/refs/heads/main/Text387.lua"))()
+        elseif opt == "SILENT AIM" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text431/refs/heads/main/Text431.lua"))()
                             
         elseif opt == "ESP ENEMIES" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text388/refs/heads/main/Text388.lua"))()
