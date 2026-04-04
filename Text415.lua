@@ -114,7 +114,7 @@ local BUTTON_CUSTOM = {
 
 -- TITULOS ARRIBA DE BOTONES (titulos simples)
 local buttonTitles = {
-    ["SPEED"] = "PLAYER",
+    ["SPED"] = "PLAYER",
     ["AUTO DESTROY TO ALL OBJECTS"] = "TROLL",
     ["JUMP(BUTTON)"] = "JUMP PAD",
 
@@ -676,7 +676,6 @@ local menuData = {
         
     },
     ["TELEPORT"] = {
-        "TP TOOL",
         "MAP",
         "LOBBY",
         "PLAYER NAME",
@@ -862,8 +861,10 @@ if topTitle then
         end
 
     end)
+    local custom = BUTTON_CUSTOM[opt]
+local offsetY = custom and custom.y or 0
 
-    oy += 40
+oy += 40 + offsetY
 
 local customTitle = customTitles[opt]
 
