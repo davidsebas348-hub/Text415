@@ -229,8 +229,8 @@ local textboxButtons = {
     variable = "AIMBOT_FOV",
     url = nil
     },
-    ["MULTIPLY DAMAGE"] = {
-    variable = "MULTIPLIER",
+    ["BULLET SIZE"] = {
+    variable = "BULLET_SIZE",
     url = nil
     },
     ["RANGE"] = {
@@ -663,6 +663,10 @@ local menuData = {
         "HITBOX EXTENDER",
         "SIZE",
         "TRASPARENCY 0-1",
+        "SILENT AIM",
+        "INSTANT RELOAD",
+        "ACTIVATE BULLET SIZE", 
+        "BULLET SIZE",
     },
     ["BRING/GRAB"] = {
         "NAME OF THE ITEM",
@@ -817,8 +821,8 @@ if topTitle then
         elseif opt == "SILENT AIM" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text431/refs/heads/main/Text431.lua"))()
                             
-        elseif opt == "ESP ENEMIES" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text388/refs/heads/main/Text388.lua"))()
+        elseif opt == "INSTANT RELOAD" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text432/refs/heads/main/Text432.lua"))()
 
         elseif opt == "AIMBOT LIGERO" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text422/refs/heads/main/Text422.lua"))()
@@ -829,8 +833,8 @@ if topTitle then
         elseif opt == "AIMBOT OP" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text421/refs/heads/main/Text421.lua"))()
 
-        elseif opt == "" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text392/refs/heads/main/Text392.lua"))()
+        elseif opt == "ACTIVATE BULLET SIZE" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text433/refs/heads/main/Text433.lua"))()
                             
         elseif opt == "TP TO PLAYER" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text408/refs/heads/main/Text408.lua"))()
