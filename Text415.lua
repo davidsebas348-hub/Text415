@@ -27,13 +27,13 @@ local numericBoxes = {
 -- poner título arriba de tal botón 
 local topTitles = {
     ["SPEED"] = "MOVEMENT SETTINGS",
-    ["SILENT AIM"] = "OP",
+    ["TRASPARENCY 0-"] = "OP",
 }
 
 -- poner títulos abajo de tal botón
 local customTitles = {
     ["SPED"] = "MOVEMENT SETTINGS",
-    ["AUTO KILL ENEMIES"] = "KILL SYSTEM",
+    ["TRASPARENCY 0-1"] = "OP",
     ["ESP NAE"] = "ESP VISUAL",
 }
 
@@ -629,17 +629,14 @@ local scrollConfig = {
     ["COMBAT"] = true,
     ["ESP"] = true,
     ["TELEPORT"] = true,
-    ["BRING/GRAB"] = true,
-    ["AUTO/ANTI"] = true,
     ["AUTO FARM"] = true,
-    ["FLING"] = true,
     ["Fps"] = false,
     ["YOUTUBE"] = false
 }
 -- ======================
 -- MENUS
 -- ======================
-local menuOrder = {"MAIN","COMBAT","ESP","TELEPORT","BRING/GRAB","AUTO/ANTI","DODGE","AUTO FARM","FLING","Fps","YOUTUBE"}
+local menuOrder = {"MAIN","COMBAT","ESP","TELEPORT","AUTO FARM","Fps","YOUTUBE"}
 local menuData = {
     ["MAIN"] = {
     "DESYNC",
@@ -668,14 +665,6 @@ local menuData = {
         "INSTANT RELOAD",
         "BULLET SIZE", 
         "BULLET SIZE."
-    },
-    ["BRING/GRAB"] = {
-        "NAME OF THE ITEM",
-        "BRING ITEM",
-        "BRING ALL THE ITEMS",
-        "NAME OF THE ITEM.",
-        "GRAB THE ITEM",
-        "GRAB THE ITEM (BUTTON)",
     },
     ["ESP"] = {
         "ESP PLAYERS",
