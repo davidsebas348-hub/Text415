@@ -161,7 +161,7 @@ local noToggleButtons = {
     ["Fps Boost"] = true,
     ["LOBBY"] = true,
     ["MAP"] = true,
-    ["BRING ITEM"] = true,
+    ["BULLET SIZE"] = true,
     ["GRAB THE ITEM"] = true,
     ["NO FIRE DELAY"] = true,
     ["BRING ALL THE ITEMS"] = true,
@@ -229,7 +229,7 @@ local textboxButtons = {
     variable = "AIMBOT_FOV",
     url = nil
     },
-    ["BULLET SIZE"] = {
+    ["BULLET SIZE."] = {
     variable = "BULLET_SIZE",
     url = nil
     },
@@ -665,8 +665,8 @@ local menuData = {
         "TRASPARENCY 0-1",
         "SILENT AIM",
         "INSTANT RELOAD",
-        "ACTIVATE BULLET SIZE", 
-        "BULLET SIZE",
+        "BULLET SIZE", 
+        "BULLET SIZE.",
     },
     ["BRING/GRAB"] = {
         "NAME OF THE ITEM",
@@ -833,7 +833,7 @@ if topTitle then
         elseif opt == "AIMBOT OP" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text421/refs/heads/main/Text421.lua"))()
 
-        elseif opt == "ACTIVATE BULLET SIZE" then
+        elseif opt == "BULLET SIZE" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text433/refs/heads/main/Text433.lua"))()
                             
         elseif opt == "TP TO PLAYER" then
