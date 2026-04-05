@@ -82,7 +82,7 @@ local BUTTON_CUSTOM = {
         y = -6
     },
 
-    ["SIZE"] = {
+    ["SIZ"] = {
         size = UDim2.new(1, -50, 0, 27),
         x = 20,
         y = -6
@@ -106,7 +106,7 @@ local BUTTON_CUSTOM = {
         y = -6
     },
 
-    ["TRASPARENCY 0-1"] = {
+    ["TRASPARENCY 0-"] = {
         size = UDim2.new(1, -50, 0, 27),
         x = 20,
         y = -9 
@@ -232,6 +232,10 @@ local textboxButtons = {
     },
     ["BULLET SIZE"] = {
     variable = "BULLET_SIZE",
+    url = "https://raw.githubusercontent.com/davidsebas348-hub/Text433/refs/heads/main/Text433.lua"
+    },
+    ["XRAY-TRANSPARENCY"] = {
+    variable = "XRAY_TRANSPARENCY",
     url = "https://raw.githubusercontent.com/davidsebas348-hub/Text433/refs/heads/main/Text433.lua"
     },
     ["RANGE"] = {
@@ -673,6 +677,7 @@ local menuData = {
         "ESP DISTANCE",
         "ESP TRACERS",
         "X-RAY",
+        "XRAY-TRANSPARENCY",
         
     },
     ["TELEPORT"] = {
@@ -822,8 +827,8 @@ if topTitle then
         elseif opt == "AIMBOT OP" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text421/refs/heads/main/Text421.lua"))()
 
-        elseif opt == "" then
-            loadstring(game:HttpGet(""))()
+        elseif opt == "X-RAY" then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text147/refs/heads/main/Text147.lua"))()
                             
         elseif opt == "TP TO PLAYER" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text408/refs/heads/main/Text408.lua"))()
