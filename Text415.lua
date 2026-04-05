@@ -22,6 +22,7 @@ local numericBoxes = {
     ["FLY SPEED"] = true,
     ["TRASPARENCY 0-1"] = true,
     ["FOV SIZE"] = true,
+    ["BULLET SIZE"] = true,
 }
 
 -- poner título arriba de tal botón 
@@ -229,9 +230,9 @@ local textboxButtons = {
     variable = "AIMBOT_FOV",
     url = nil
     },
-    ["BULLET SIZE."] = {
+    ["BULLET SIZE"] = {
     variable = "BULLET_SIZE",
-    url = nil
+    url = "https://raw.githubusercontent.com/davidsebas348-hub/Text433/refs/heads/main/Text433.lua"
     },
     ["RANGE"] = {
     variable = "RANGE",
@@ -664,7 +665,6 @@ local menuData = {
         "BULLET TRACERS",
         "INSTANT RELOAD",
         "BULLET SIZE", 
-        "BULLET SIZE."
     },
     ["ESP"] = {
         "ESP PLAYERS",
@@ -822,8 +822,8 @@ if topTitle then
         elseif opt == "AIMBOT OP" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text421/refs/heads/main/Text421.lua"))()
 
-        elseif opt == "BULLET SIZE" then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text433/refs/heads/main/Text433.lua"))()
+        elseif opt == "" then
+            loadstring(game:HttpGet(""))()
                             
         elseif opt == "TP TO PLAYER" then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/davidsebas348-hub/Text408/refs/heads/main/Text408.lua"))()
