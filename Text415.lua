@@ -490,8 +490,18 @@ local function createButton(parent,text,y,callback)
                 local opt = options[index]
                 label.Text = opt.name
                 label.TextColor3 = opt.color
-                if multiConfig.variable then
-                    getgenv()[multiConfig.variable] = opt.name
+                if index ~= 0 then
+    local opt = options[index]
+
+    -- borrar variables anteriores
+    for _, option in ipairs(options) do
+        if option.name then
+            getgenv()[option.name] = nil
+        end
+    end
+
+    -- activar solo la actual
+    getgenv()[opt.name] = true
                 end
             end
         end
